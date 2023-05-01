@@ -49,6 +49,7 @@
 		5F24F98829FFF2D4001ACD5E /* G's GraphUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "G's GraphUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F24F98C29FFF2D4001ACD5E /* G_s_GraphUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = G_s_GraphUITests.swift; sourceTree = "<group>"; };
 		5F24F98E29FFF2D4001ACD5E /* G_s_GraphUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = G_s_GraphUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5F24F99B29FFF482001ACD5E /* G-s-Graph-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "G-s-Graph-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		5F24F96A29FFF2D2001ACD5E /* G's Graph */ = {
 			isa = PBXGroup;
 			children = (
+				5F24F99B29FFF482001ACD5E /* G-s-Graph-Info.plist */,
 				5F24F96B29FFF2D2001ACD5E /* G_s_GraphApp.swift */,
 				5F24F96D29FFF2D2001ACD5E /* Persistence.swift */,
 				5F24F97229FFF2D2001ACD5E /* ContentView.swift */,
@@ -427,6 +429,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "G-s-Graph-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -445,10 +448,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "hu.G.G-s-Graph";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3";
 			};
 			name = Debug;
 		};
@@ -465,6 +470,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "G-s-Graph-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -483,10 +489,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "hu.G.G-s-Graph";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3";
 			};
 			name = Release;
 		};
